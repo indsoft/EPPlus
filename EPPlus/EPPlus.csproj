@@ -261,6 +261,7 @@
     <Compile Include="Drawing\Chart\ExcelBubbleChart.cs" />
     <Compile Include="Drawing\Chart\ExcelChartSurface.cs" />
     <Compile Include="Drawing\ExcelDrawingBase.cs" />
+    <Compile Include="Drawing\ExcelDrawingLineEnd.cs" />
     <Compile Include="Drawing\ExcelPicture.cs" />
     <Compile Include="Drawing\Chart\ExcelRadarChartSerie.cs" />
     <Compile Include="Drawing\Vml\ExcelVmlDrawingPictureCollection.cs" />

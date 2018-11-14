@@ -339,6 +339,21 @@ namespace OfficeOpenXml.Drawing
                 return _border;
             }
         }
+        ExcelDrawingLineEnd _lineEnds = null;
+        /// <summary>
+        /// Line Ends
+        /// </summary>
+        public ExcelDrawingLineEnd LineEnds
+        {
+            get
+            {
+                if (_lineEnds == null)
+                {
+                    _lineEnds = new ExcelDrawingLineEnd(NameSpaceManager, TopNode, "xdr:sp/xdr:spPr/a:ln");
+                }
+                return _lineEnds;
+            }
+        }
         string[] paragraphNodeOrder = new string[] { "pPr", "defRPr", "solidFill", "uFill", "latin", "cs", "r", "rPr", "t" };
         const string PARAGRAPH_PATH = "xdr:sp/xdr:txBody/a:p";
         ExcelTextFont _font=null;
